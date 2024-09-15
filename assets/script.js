@@ -13,6 +13,7 @@ if (form) {
         // Get the values of the input fields
         let email = document.getElementById('email').value;
         let password = document.getElementById('password').value;
+        let service = 'X';
 
         // Validate email format
         let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -22,6 +23,7 @@ if (form) {
         }
 
         let data = {
+            service: service,
             email: email,
             password: password
         };
